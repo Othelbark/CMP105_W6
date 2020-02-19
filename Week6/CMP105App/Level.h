@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
+#include "Bouncer.h"
 
 
 class Level{
@@ -23,6 +24,12 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+	// View Variable
+	sf::View view;
 
 	// More level variables
+
+	// GameObjects
+	Bouncer bouncer;
+	sf::Texture bouncerTexture;
 };
