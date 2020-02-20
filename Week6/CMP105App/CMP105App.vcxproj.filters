@@ -42,6 +42,9 @@
     <ClCompile Include="Mover.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Launcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -71,6 +74,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Mover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Launcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

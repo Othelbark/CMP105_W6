@@ -19,6 +19,12 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	mover.setPosition(0, 0);
 	mover.setSize(sf::Vector2f(50, 50));
 	mover.setTexture(&bouncerTexture);
+
+	launcher.setInput(input);
+	launcher.setView(&view);
+	launcher.setPosition(50, 600);
+	launcher.setSize(sf::Vector2f(25, 25));
+	launcher.setTexture(&bouncerTexture);
 }
 
 Level::~Level()
@@ -38,6 +44,7 @@ void Level::handleInput(float dt)
 
 	bouncer.handleInput(dt);
 	mover.handleInput(dt);
+	launcher.handleInput(dt);
 }
 
 // Update game objects
@@ -45,6 +52,7 @@ void Level::update(float dt)
 {
 	bouncer.update(dt);
 	mover.update(dt);
+	launcher.update(dt);
 }
 
 // Render level
@@ -54,6 +62,7 @@ void Level::render()
 
 	window->draw(bouncer);
 	window->draw(mover);
+	window->draw(launcher);
 
 	endDraw();
 }

@@ -42,7 +42,9 @@ void Bouncer::update(float dt)
 	// Move shape by new velocity
 	sf::Vector2f pos = velocity * dt + 0.5f * gravity * dt * dt; //ut+ 1/2at^2
 	velocity += gravity * dt; // v = u + at  note the += is not =
-	setPosition(getPosition() +pos);// Check for collision with bottom of window
+	setPosition(getPosition() +pos);
+
+	// Check for collision with bottom of window
 	if (getPosition().y >= (view->getSize().y - getSize().y))
 	{
 		setPosition(getPosition().x, (view->getSize().y - getSize().y));

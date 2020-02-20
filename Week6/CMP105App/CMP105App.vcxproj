@@ -162,6 +162,7 @@
     <ClCompile Include="Framework\Input.cpp" />
     <ClCompile Include="Framework\GameObject.cpp" />
     <ClCompile Include="Framework\Vector.cpp" />
+    <ClCompile Include="Launcher.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mover.cpp" />
@@ -176,6 +177,7 @@
     <ClInclude Include="Framework\Input.h" />
     <ClInclude Include="Framework\GameObject.h" />
     <ClInclude Include="Framework\Vector.h" />
+    <ClInclude Include="Launcher.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="Mover.h" />
   </ItemGroup>

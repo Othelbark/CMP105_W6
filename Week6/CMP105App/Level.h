@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Bouncer.h"
 #include "Mover.h"
+#include "Launcher.h"
 
 
 class Level{
@@ -35,5 +36,6 @@ private:
 	sf::Texture bouncerTexture;
 
 	Mover mover;
-	//sf::Texture moverTexture;
+
+	Launcher launcher;
 };
