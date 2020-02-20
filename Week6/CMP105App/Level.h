@@ -5,6 +5,7 @@
 #include <string.h>
 #include <iostream>
 #include "Bouncer.h"
+#include "Mover.h"
 
 
 class Level{
@@ -32,4 +33,7 @@ private:
 	// GameObjects
 	Bouncer bouncer;
 	sf::Texture bouncerTexture;
+
+	Mover mover;
+	//sf::Texture moverTexture;
 };

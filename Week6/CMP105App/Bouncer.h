@@ -16,8 +16,10 @@ public:
 protected:
 	sf::View* view;
 
-	sf::Vector2f gravity;
 	float scale;
-	sf::Vector2f stepVelocity;
+	//sf::Vector2f stepVelocity;
+	sf::Vector2f gravity;
+	sf::Vector2f jumpVector;
+	bool isJumping;
 };
 

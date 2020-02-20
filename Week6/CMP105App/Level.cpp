@@ -13,6 +13,12 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	bouncer.setSize(sf::Vector2f(80, 80));
 	bouncerTexture.loadFromFile("gfx/Beach_Ball.png");
 	bouncer.setTexture(&bouncerTexture);
+
+
+	mover.setInput(input);
+	mover.setPosition(0, 0);
+	mover.setSize(sf::Vector2f(50, 50));
+	mover.setTexture(&bouncerTexture);
 }
 
 Level::~Level()
@@ -29,12 +35,16 @@ void Level::handleInput(float dt)
 		window->close();
 	}
 
+
+	bouncer.handleInput(dt);
+	mover.handleInput(dt);
 }
 
 // Update game objects
 void Level::update(float dt)
 {
 	bouncer.update(dt);
+	mover.update(dt);
 }
 
 // Render level
@@ -43,6 +53,7 @@ void Level::render()
 	beginDraw();
 
 	window->draw(bouncer);
+	window->draw(mover);
 
 	endDraw();
 }
